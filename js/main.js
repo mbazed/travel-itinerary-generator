@@ -1,3 +1,8 @@
+const domNode = document.getElementById('navigation');
+const root = createRoot(domNode);
+root.render(<NavigationBar />);
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('itinerary-form');
     const itineraryDisplay = document.getElementById('itinerary-display');

@@ -5,9 +5,9 @@ const express = require('express');
 const path = require('path');
 const axios = require('axios');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9000;
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname,'../frontend/')));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
